@@ -65,7 +65,7 @@ int main()
 
    Cars Volga("Volga", 8,200); //создание объекта конструктор с параметрами
    std::cout <<"вывод значений полей объеккта VOLGA" << std::endl;
-   std::cout << *Volga.get_car_name()<< std::endl; // вывод значений полей
+   std::cout << Volga.get_car_name()<< std::endl; // вывод значений полей
    std::cout << Volga.get_cnt_cylinder()<< std::endl;
    std::cout <<Volga.get_power() << std::endl<< std::endl;
 
@@ -95,7 +95,7 @@ int main()
 
     Lorry Maz("Maz", 8, 200, 400); //объект дочернего класса
     std::cout << "Значения полей объекта MAZ" << std::endl;
-    std::cout << *Maz.get_car_name() << std::endl;
+    std::cout << Maz.get_car_name() << std::endl;
     std::cout << Maz. get_cnt_cylinder() << std::endl;
     std::cout << Maz.get_power() << std:: endl;
      std::cout << Maz.get_capacity() << std::endl;
@@ -103,7 +103,7 @@ int main()
     Lorry Kraz; //объект дочернего класса
     // чтение полей объекта
     std::cout << "Значения полей объекта KRAZ" << std::endl;
-    std::cout << *Kraz.get_car_name() << std::endl;    
+    std::cout << Kraz.get_car_name() << std::endl;    
     std::cout << Kraz. get_cnt_cylinder() << std::endl;
     std::cout << Kraz.get_power() << std:: endl;
     std::cout << Kraz.get_capacity() << std::endl;
@@ -119,7 +119,7 @@ int main()
 
     Maz = Man;
      std::cout << "Значения полей объекта Maz  после присвоения значений MAN" << std::endl;
-    std::cout << *Maz.get_car_name() << std::endl;    
+    std::cout << Maz.get_car_name() << std::endl;    
     std::cout << Maz. get_cnt_cylinder() << std::endl;
     std::cout << Maz.get_power() << std:: endl;
     std::cout << Maz.get_capacity() << std::endl;

@@ -28,7 +28,7 @@ class Lorry : public Cars
         
         
 
-       int get_capacity(){return capacity;}
+       int get_capacity() const {return capacity;}
        void set_capacity(int cnt){capacity = cnt;}  
 
 
